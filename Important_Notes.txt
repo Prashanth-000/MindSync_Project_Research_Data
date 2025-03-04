@@ -1,0 +1,4 @@
+1.https://github.com/prajaktapawarr/Multimodal-Emotion-Detection
+
+2.https://github.com/Lakshmanpraveen42/Emotion-Recognition-from-Text-and-Speech
+
