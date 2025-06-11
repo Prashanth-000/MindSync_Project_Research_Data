@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="MindSync Class Diagram" id="QhylEM-7Yyyo_L_0jBoS">
+    <mxGraphModel dx="1114" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- User Class -->
+        <mxCell id="2" value="User&#xa;-- userId: int&#xa;-- name: string&#xa;-- email: string&#xa;writeEntry()&#xa;viewReminders()" style="swimlane;fillColor=#d1eaff;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="160" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- JournalEntry Class -->
+        <mxCell id="3" value="JournalEntry&#xa;-- userId: int&#xa;-- entryId: int&#xa;-- content: string&#xa;-- date: date&#xa;submit()&#xa;extractTasks()" style="swimlane;fillColor=#e3ffd1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="20" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- NLP Processor -->
+        <mxCell id="4" value="NLP Processor&#xa;analyzeText()&#xa;detectSentiment()&#xa;extractKeywords()" style="swimlane;fillColor=#fef3d1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="180" width="180" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Sentiment Analyzer -->
+        <mxCell id="5" value="Sentiment Analyzer&#xa;-- algorithm: string&#xa;-- result: string" style="swimlane;fillColor=#ffd1dc;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="180" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Task Reminder -->
+        <mxCell id="6" value="Task Reminder&#xa;-- reminderId: int&#xa;-- task: string&#xa;-- date: date&#xa;notify()" style="swimlane;fillColor=#e8d1ff;" vertex="1" parent="1">
+          <mxGeometry x="360" y="180" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Database -->
+        <mxCell id="7" value="Database&#xa;-- entries: list&#xa;-- users: list&#xa;-- reminders: list&#xa;saveEntry()&#xa;fetchUser()&#xa;storeMood()&#xa;getReminders()" style="swimlane;fillColor=#d1ffd7;" vertex="1" parent="1">
+          <mxGeometry x="140" y="320" width="200" height="140" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
